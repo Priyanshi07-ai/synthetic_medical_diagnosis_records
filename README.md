@@ -1,0 +1,7 @@
+# synthetic_medical_diagnosis_records
+### SUMMARY: GENERATING SYNTHETIC MEDICAL DIAGNOSIS RECORDS
+
+#### This project focuses on improving disease prediction using Machine Learning and Synthetic Data Augmentation. Three medical datasets were used: heart disease, diabetes, and liver disease. Initially, the datasets were small and imbalanced, meaning healthy cases were much higher than disease cases. This imbalance causes machine learning models to become biased and perform poorly in detecting actual patients.
+#### To solve this, data preprocessing and exploratory data analysis were performed. Missing values were handled, categorical features were converted into numerical form, and important medical features such as age, blood pressure, cholesterol, BMI, and glucose were selected.
+#### A Random Forest Classifier was trained on the original datasets to establish baseline accuracy. After this, CTGAN (Conditional Tabular GAN) was used to generate synthetic data for the minority class. CTGAN learns patterns from real patient records and creates realistic artificial patients. The real and synthetic data were then combined to form augmented datasets.
+#### The machine learning models were retrained using the augmented datasets. Accuracy of models trained on real data and augmented data were compared. Results showed improved performance when synthetic data was used. Finally, trained models were saved and deployed using Streamlit to create a user interface for disease prediction.
